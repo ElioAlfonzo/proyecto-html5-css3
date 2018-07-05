@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <title>Proyecto Html5-Css3</title>
+</head>
+
+<body>
+
+    <header class="encabezado" role="banner">
+        <div class="contenedor">
+            <a href="#" class="logo">
+                <img src="imagenes/logo.png" alt="Logo del sitio">
+            </a>
+
+            <nav role="navigation"><!--role="navigation" para indentificarlo como la navegacion principal-->
+                <ul><!-- Lista desordenada -->
+                    
+                    <li><a href="#">Nosotros</a></li><!--Elementos de la lista-->
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                </ul>
+            </nav>
+
+        </div><!--Fin .contenedor-->
+    </header><!--Fin de .encabezado-->
+    
+
+    <div class="presentacion">
+        <div class="contenedor">
+            
+            <div class="introduccion-presentacion">
+                <h1>EXPERTO HTML5 & CSS3 <br>
+                    <span>Empieza a codificar hermosos sitios web en 8 horas</span>
+                </h1>
+                
+                <a href="#" class="aprender-mas">Aprender Mas</a>
+                
+            </div><!--Fin de .introduccion-presentacion-->
+
+            <img src="imagenes/computadora.png" alt="Computadora Publicitaria">
+
+        </div><!--Fin .contenedor -->
+    </div> <!--Fin de .presentacion-->
+
+    <section class="acceso-rapido">
+        <div class="contenedor">
+            <h2>Acceso Rapido</h2>
+            <ul>
+                <figure>
+                        <a href=""><img src="imagenes/ico-nosotros.png" alt="Nosotros"></a>
+                        <h3> <a href="#">Nosotros</a> </h3>
+                </figure>
+
+                <figure>
+                        <a href=""><img src="imagenes/ico-servicios.png" alt="Servicios"></a>
+                        <h3><a href="#">Servicios</a></h3>
+                </figure>
+                
+                <figure>
+                        <a href=""><img src="imagenes/ico-ubicanos.png" alt="Ubicanos"></a>
+                        <h3><a href="#">Ubicanos</a></h3>
+                </figure>
+                
+                <figure>
+                        <a href=""><img src="imagenes/ico-contactanos.png" alt="Contactanos"></a>
+                        <h3><a href="#">Contactanos</a></h3>
+                </figure>
+            </ul>
+        </div><!--Fin .contenedor -->
+    </section><!--Fin de .acceso-rapido-->
+
+    <div class="bloque-contenido">
+        <div class="contenedor">
+            <main class="articulos" role="main">
+                <h2>Ultimas Noticias</h2>
+
+                <article>
+                    <img src="imagenes/img-articulo1.jpg" alt="">
+                    <h1><a href="#">Un Perrito Feliz</a></h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nostrum quod libero iste voluptate, ut. Corporis aperiam eos quam architecto. Facilis amet nesciunt voluptas eaque, minus esse saepe mollitia vero.</p>
+
+                </article>
+
+                <article>
+                        <img src="imagenes/img-articulo2.jpg" alt="">
+                        <h1><a href="#">Un Perrito Crazy</a></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nostrum quod libero iste voluptate, ut. Corporis aperiam eos quam architecto. Facilis amet nesciunt voluptas eaque, minus esse saepe mollitia vero.</p>
+                </article>
+
+                <article>
+                        <img src="imagenes/img-articulo3.jpg" alt="">
+                        <h1><a href="#">Un Perrito Herm</a></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nostrum quod libero iste voluptate, ut. Corporis aperiam eos quam architecto. Facilis amet nesciunt voluptas eaque, minus esse saepe mollitia vero.</p>
+    
+                </article>
+            </main>
+
+            <aside class="complementario" role="complementario">
+                <h2>Proximos Eventos</h2>
+                <ul>
+                    <li><a href="#">Estilos de Ropa para Perros</a></li>
+
+                    <li><a href="#">Estilos de Ropa para Perros</a></li>
+
+                    <li><a href="#">Estilos de Ropa para Perros Tanto para carnavales como para diciembre</a></li>
+
+                    <li><a href="#">Estilos de Ropa para Perros</a></li>
+
+                    <li><a href="#">Estilos de Ropa para Perros</a></li>
+
+                    <li><a href="#">Estilos de Ropa para Perros</a></li>
+
+                    <li><a href="#">Estilos de Ropa para Perros</a></li>
+
+                    <li><a href="#">Estilos de Ropa para Perros Tanto para carnavales como para diciembre</a></li>
+
+                    <li><a href="#">Estilos de Ropa para Perros</a></li>
+
+                    <li><a href="#">Estilos de Ropa para Perros</a></li>
+
+                </ul>
+            </aside><!--Fin de .complementario-->
+
+        </div><!--Fin .contenedor-->
+    </div><!--Fin .bloque-contenido-->
+
+    <section class="suscripcion">
+        <div class="contenedor">
+            <h2>Mantengase Informado</h2>
+            <form action="#">
+                <input type="text" name="nombre"  placeholder="Ingresa tu nombre..." required>
+                <input type="email" name="email" placeholder="Inserte su email..." required>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div><!--Fin .contenedor-->
+    </section><!--Fin .suscripcion-->
+
+    <footer class="piedepagina" role="contentinfo">
+        <div class="contenedor">
+
+            <small>Copyright © 2014 Nombre Empresa</small><!--Esta etiqueta small es para derechos de autor y derechos-->
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Politicas del sitio</a></li>
+                    <li><a href="#">Preguntas Frecentes</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div><!--Fin .contenedor-->
+    </footer><!--Fin de .piedepagina-->
+    
+    <div class="social">
+        <a href="#" title="Vamos a Facebook"><img src="imagenes/ico-face.jpg" alt=""></a>
+
+        <a href="#" title="Vamos a Youtube"><img src="imagenes/ico-youtube.jpg" alt=""></a>
+        
+        <a href="#" title="Vamos a Twitter"><img src="imagenes/ico-twitter.jpg" alt=""></a>
+    </div><!--Fin de .social-->
+
+</body>
+
+</html>

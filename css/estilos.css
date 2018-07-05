@@ -1,0 +1,393 @@
+Estilo a todos los elementos html
+*{
+    box-sizing: border-box; /*nos permite incluir el border y el padding en el tamaño general del documento */
+}
+
+/* estilo a todo el body */
+body{
+    font-size: 16px; /*Tamaño general del texto d la pagina*/
+    font-family: Arial, Helvetica, sans-serif; /*que use esta familia de letra*/
+    line-height: 1.4em; /*Internlineado general*/   
+}
+
+/*--------------------------------------------
+        ANCHURA DEL SITIO
+---------------------------------------------*/
+.contenedor{
+    width: 980px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+/*--------------------------------------------
+        ENCABEZADO DEL SITIO
+---------------------------------------------*/
+.encabezado{ /*Encabezado en general*/
+    background: #2c2c2c;
+    overflow: hidden; /*esto obliga a que otros elementos no se metan*/
+    box-shadow: 0 0 20px 0 #070707;
+	position: relative;
+}
+.logo{ /*Logo*/
+    float: left;
+    /*margin-top: 7px; nos afecta toda la barra*/
+    
+    /*con estas 2 propiedades nos afecta solo al logo*/
+    position: relative;
+    top: 7px;
+    
+}
+
+.encabezado nav{ /*Navegacion*/
+    float: right;
+    
+}
+.encabezado nav ul{ /*los item de navegacion*/
+    margin: 0; /*quitamos los margenes*/
+    padding: 0;/*quitamos el pading*/
+    list-style: none;/*quitamos el punto*/    
+}
+
+.encabezado nav ul li{ /*posicion de los item de navegacion*/
+    display: inline-block;/*posicional horizontal*/
+    margin-right: -4px;; /*elimina espacio entre cada item*/
+}
+
+.encabezado nav ul li a{ /*estilos a los enlaces de navegacion*/
+    display: block;
+    color: #fff;
+    padding: 26px;/*le agrega espacio a los 4 lados*/
+    border-left: 1px solid #6E6E6E; /*grosor y color del borde*/
+    text-decoration: none;/*elimina el subrayado de cada item*/
+}
+/* :hover aplicar este estilo al pasar el mouse por encima*/
+.encabezado nav ul li a:hover{ 
+    background: #3c3b3b;
+}
+
+
+
+/*-------------------------------
+            PRESENTACION
+----------------------------------*/
+/*le decimos al elento presentacion que el tiene elementos hijos flotantes*/
+/*y asi reconoce a sus hijos*/
+.presentacion{  
+    /*overflow: hidden; /*El elemtento q desborde la seccion (.presentacion) no se mostrara*/
+    background:radial-gradient(200px at 80% 20%,#adb9cc,#313162);
+    border-bottom: 3px solid #6b6b9f;
+    border-bottom: 3px solid #044e8b;
+    /*border-top: 1px solid #87878a;*/
+    
+}
+
+.introduccion-presentacion{
+    display: inline-block;
+}
+
+.introduccion-presentacion h1{
+    color: #fff;
+    font-size: 2.625em; /*42px; este sera el valor de ahora en adelante de em*/
+    text-shadow: 1px 1px 0px #090909;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    line-height: 0.7em; /*Para hacer un interlineado en el texto h1*/
+}
+
+.introduccion-presentacion h1 span{
+    color: #fff;
+/*1em me sigue apareciendo igual al font-size mas cercano*/
+/*ahora como necesitamos usar (em) debeboms formatearlo aplica regla de 3 para lograr los 16px
+16px X 1em / 42px = 0.380952381em; */
+    font-size: 0.380952381em;  /*quedo en 16px*/
+
+}
+
+a.aprender-mas{
+    font-size: 2.1875em;/*35px transformados a em*/
+    border: 1px solid #0d5c25; /*bordes del boton*/
+    padding: 30px 50px;
+    background-color: #0b9f9f; /*color fondo*/
+    display: block; /*es el bloque paraque tome los estilos*/
+    text-align: center; /*centrado el texto*/
+    margin: 10px 40px 55px; /*margenes supe  - lados - inferior*/
+    color: #fff; /*color letra*/
+    text-decoration: none; /*ningun subrayado*/
+    /*text-shadow:1px 1px 0 #4a4747; /*sombra en las letras*/
+    border-radius: 10px; /*esquinas redondeadas*/
+    background: linear-gradient(to top,#0b9f9f,#0b9f9f);
+    box-shadow: 0 8px 0 0 #0c4b4b,/* 0 ali-horizontal|8px tam sombra |0 difu de  la sombra|0 grosor sombra |color sombra*/
+                0 0  25px 5px #fff;/*2dasombra|  */
+
+}
+a.aprender-mas:hover{ /*a esta propiedad agregar un color de fondo cuando le pase el mouse por encima :hover*/
+    background:linear-gradient(to top,#0b9f9f,#16dede);
+}
+.presentacion img{
+    float: right;
+    position: relative;
+    top: 20px;
+}
+
+
+/*******************************************
+                ACCESO RAPIDO
+********************************************/
+
+.acceso-rapido{
+    background: #4cb0b0; /*Color de fondo en la seccion acceso rapido*/
+    overflow: hidden; /*para que me elimine u espacio entre el bloque d arriba y este*/
+    border-bottom: solid #429898
+}
+
+.acceso-rapido h2{
+    color: #fff;
+    /* 30px/16em = 1.875em  */
+    font-size: 1.875em; /*Tamaño de letra igual 30px*/
+    /* text-shadow:1px 1px 0 #000; /*Sombra interior al texto*/
+    text-align: center;
+    border-bottom: 5px solid #fff;/*linea blanca*/
+    padding-bottom: 15px;/*espacio entre la linea y el texto*/
+}
+
+.acceso-rapido figure{
+    display: inline-block;
+    text-align: center;
+    width: 25%;/*25% x 4 = 100 y asi caben los 4 */
+    margin: 0 -4px 0 0;
+    padding: 0px;
+}
+.acceso-rapido h3{
+    font-size: 2.1875em;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.acceso-rapido h3 a{
+ color: #fff;
+ font-weight: normal;/*para eliminar la negrita q nos trae por defecto*/
+ text-decoration: none;
+}
+.acceso-rapido h3 a:hover{ /* :hover me aparezca la linea*/
+    text-decoration: underline;/*me aparesca la linea*/   
+}
+
+/**********************
+    bloque-contenido
+**********************/
+
+.bloque-contenido{ /*clase padre de este bloque*/
+    overflow: hidden;/**/
+    margin-top: 25px;
+}
+
+.bloque-contenido .contenedor{
+    display: table;
+}
+
+.articulos{
+    /*float: left;/*flote a la izquierda*/
+    /*background: red;*/
+    width: 65%;
+    display: table-cell;
+    padding-right: 30px;
+}
+
+.articulos article{
+    margin-bottom: 10px;
+}
+
+.articulos h2{
+    color: #344444;
+    font-size: 1.625em;
+    border-bottom: 3px solid #344444;
+    padding-bottom: 25px;
+
+}
+
+.articulos img{
+    float: left;
+    margin-right: 10px;
+    position: relative;/*es buena usarla al trabajar con diseños*/
+    top: 4px;/*margen superior a la imagen*/
+}
+
+.articulos article h1{/*titulos de los articulos*/
+    color: #444444;
+    font-size: 1.25em; /*20px*/
+    margin: 0 0 8px 0;
+}
+
+.articulos article h1 a{/*el titulo de los articulos*/
+    color: #444444;
+    font-size: 1.25em; /*20px*/
+    text-decoration: none;
+}
+
+.articulos article h1 a:hover{/*me aparezca cuando paso el mouse*/
+    color: #444444;
+    font-size: 1.25em; /*20px*/
+    text-decoration:underline ;
+}
+
+
+
+.articulos article p{/*parafos en los articulos*/
+    margin: 0;
+    font-size: 0.875em; /*14px*/
+}
+
+/*******************
+Complementario | Proximos Eventos
+********************/
+
+.complementario{ /*esta es la clase padre de este bloque*/
+    /*float: right;*/
+    background: #0460ad;
+    width: 50%;/*Ancho*/
+    display: table-cell;
+    /*aveces podemos usar padding:20 con un valor si no se duplica alrededor*/
+   padding: 0 20px 20px 20px; 
+}
+
+.complementario h2 {
+    font-size: 1.625em;
+    text-align: center;
+    color: #fff;
+    font-weight: normal; /*quitar la negrita*/
+}
+
+.complementario ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.complementario ul li{
+    background: url("../imagenes/ico-evento.png")no-repeat left center;
+    padding-left: 25px;
+    margin-bottom: 7px;
+}
+
+.complementario ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.complementario ul li a:hover{ /*al pasar el mouse*/
+    
+    color: #fff;
+    text-decoration: underline; /*linea inferior*/
+}
+
+/********************************
+    Suscripcion
+*********************************/
+.suscripcion{ /*Clase padre*/
+    overflow: hidden; /*solo contenido de este bloque*/
+    /*border: 1px solid red;*/
+    background: #eeeeee;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.suscripcion h2{
+    float: left;
+    font-size: 1.625em;
+    color: #444444;
+    font-weight: normal; /*quitar negrita*/
+}
+
+.suscripcion form{
+    float: right;
+    position: relative;
+    top: 20px;
+
+}
+
+.suscripcion form input{
+    border: 1px solid #cccccc;  
+    padding: 10px;
+}
+
+.suscripcion form input[type="submit"]{ /*seleccione el input de typo submit*/
+    background: #0460ad;
+    color: #fff;   
+    border: 1px solid #cccccc;  
+    padding: 10px;
+    box-shadow: 0 -1px 0px 0 #fff inset; /*linea blanca inferior*/
+}
+
+.suscripcion form input[type="submit"]:hover{ /*al pasar el mouse*/
+    background: #429898;
+    
+}
+
+/***************************
+ Pie de pagina
+ ****************************/
+.piedepagina{ /*Clase padre*/
+    background: #444444;
+    padding: 20px 0;
+}
+
+.piedepagina .contenedor{
+    display: table;
+}
+
+.piedepagina .contenedor small{
+    display: table-cell;
+    color: #fff;
+}
+
+.piedepagina nav{
+    display: table-cell;
+    text-align: right;
+    /*eliminar el margen el paddi y el decorate q siempre traen*/
+}
+
+.piedepagina nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.piedepagina nav ul li{
+    display: inline-block;
+    padding-left: 10px;
+
+}
+
+.piedepagina nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.piedepagina nav ul li a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+/***************************+
+Botones Redes Sociales
+***************************/
+.social{
+    position: fixed; /*ojo aqui muy buena se mantiene estatica */
+    top: 30%; /*magen superior con respecto a fixed*/
+    right: 0px;
+}
+.social a{ /*controlar cada item*/
+    display: block; /*queden uno arriba de otro*/
+    margin-bottom: 4px; /*margen inferior*/
+    opacity: 0.8;
+}
+.social a:hover{ /*controlar cada item*/
+    opacity: 1;
+    
+}
+
+.social img{
+    border-radius: 10% 10%; /*los bordes de la imagen*/
+    display: block; /*para evitar problemas de posicion*/
+}
